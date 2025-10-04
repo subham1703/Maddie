@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 span {
+    color: #ff6f61;
+}
+
+form {
+    background: #1f1f2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="text"], input[type="email"], input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background: #ff6f61;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    color: #ff6f61;
+    font-size: 0.9em;
+}
+
+.ticket {
+    background: linear-gradient(90deg, #301934, #2c2b5e);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.ticket img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .ticket {
+        flex-direction: column;
+        text-align: center;
+    }
+}
